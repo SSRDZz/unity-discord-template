@@ -8,10 +8,14 @@
     let discordHelper: DiscordHelper;
 
     onMount(() => {
+    try {
         discordHelper = new DiscordHelper();
         discordHelper.setupParentIframe();
-        initializeUnity();
-    });
+    } catch (e) {
+        console.warn("Not running inside Discord:", e);
+    }
+    initializeUnity();
+});
 
     function initializeUnity() {
         // Load the WebGL.loader.js script
