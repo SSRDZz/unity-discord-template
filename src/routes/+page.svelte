@@ -24,9 +24,9 @@
         script.async = true;
         script.onload = () => {
             createUnityInstance(unityCanvas, {
-                dataUrl: "/Build/Built_Game.data.gz",
-                frameworkUrl: "/Build/Built_Game.framework.js.gz",
-                codeUrl: "/Build/Built_Game.wasm.gz",
+                dataUrl: "/Build/Built_Game.data.unityweb",
+                frameworkUrl: "/Build/Built_Game.framework.js.unityweb",
+                codeUrl: "/Build/Built_Game.wasm.unityweb",
                 streamingAssetsUrl: "StreamingAssets",
                 companyName: config.COMPANY_NAME,
                 productName: config.PRODUCT_NAME,
